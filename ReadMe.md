@@ -1,6 +1,6 @@
 ###Problem
 
-Paper requires it's methods to be call off the main thread. I created an intent service with @IntentBuilder and encapsulated the calls, however, I had not thought of returning the call return values thus two solutions came to mind, EventBus and a ResultReceiver.
+Paper requires it's methods to be call off the main thread. I created an intent service(reference to the context can use getBaseContext(untested for now)) with @IntentBuilder and encapsulated the calls, however, I had not thought of returning the call return values thus two solutions came to mind, EventBus and a ResultReceiver(which requires Parcelables and sending custom types(see ParcelablePlease and its Bagger class)).
 
 This made me think of the implementation being the problem, and I thought that a different service type should be use to communicate from the background to the activity to pass the results.
 
