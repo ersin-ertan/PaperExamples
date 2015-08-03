@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import io.paperdb.Paper;
 
@@ -32,6 +31,22 @@ public class MainActivity extends AppCompatActivity{
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item){
 		int id = item.getItemId();
+
+		/*
+		* // From Component A
+LongTaskOne().execute();
+
+// From Component B at the same time
+LongTaskTwo().execute();
+
+		Both use the same worker thread, thus they run sequentially.
+		To run in parallel, use the executeOnExecutor(Executor exec, Params... params)
+AsyncTask.SERIAL_EXECUTOR;
+AsyncTask.THREAD_POOL_EXECUTOR;
+
+as the executor type
+
+		*/
 
 		switch(id){
 			case R.id.action_clear:
@@ -83,8 +98,6 @@ public class MainActivity extends AppCompatActivity{
 					}
 				});
 				return true;
-
-
 		}
 
 		return super.onOptionsItemSelected(item);
