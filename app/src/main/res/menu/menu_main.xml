@@ -8,37 +8,37 @@
 	<item
 		android:id = "@+id/action_clear"
 		android:orderInCategory = "100"
-		android:title = "@string/action_settings"
+		android:title = "@string/action_clear"
 		app:showAsAction = "never"
 		/>
 	<item
 		android:id = "@+id/action_exist"
 		android:orderInCategory = "101"
-		android:title = "@string/action_settings"
+		android:title = "@string/action_exist"
 		app:showAsAction = "never"
 		/>
 	<item
 		android:id = "@+id/action_delete"
 		android:orderInCategory = "102"
-		android:title = "@string/action_settings"
+		android:title = "@string/action_delete"
 		app:showAsAction = "never"
 		/>
 	<item
 		android:id = "@+id/action_put"
 		android:orderInCategory = "103"
-		android:title = "@string/action_settings"
+		android:title = "@string/action_put"
 		app:showAsAction = "never"
 		/>
 	<item
 		android:id = "@+id/action_get"
 		android:orderInCategory = "104"
-		android:title = "@string/action_settings"
+		android:title = "@string/action_get"
 		app:showAsAction = "never"
 		/>
 	<item
 		android:id = "@+id/action_get_def"
 		android:orderInCategory = "105"
-		android:title = "@string/action_settings"
+		android:title = "@string/action_get_def"
 		app:showAsAction = "never"
 		/>
 
